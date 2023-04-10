@@ -1,0 +1,351 @@
+
+*** Running vivado
+    with args -log riscv_Ethernet_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_Ethernet_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+source riscv_Ethernet_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top riscv_Ethernet_0 -part xc7k325tffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6403
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2756.348 ; gain = 0.000 ; free physical = 54285 ; free virtual = 75630
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_Ethernet_0' [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/workspace/rocket64b1/vivado-genesys2-riscv/genesys2-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/synth/riscv_Ethernet_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ethernet' [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:25]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:280]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:300]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:310]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:334]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:345]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:353]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet' (2#1) [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_Ethernet_0' (3#1) [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/workspace/rocket64b1/vivado-genesys2-riscv/genesys2-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/synth/riscv_Ethernet_0.v:58]
+WARNING: [Synth 8-7129] Port s_axi_awaddr[15] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[14] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[13] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[12] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[15] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[14] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[13] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[12] in module ethernet is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2756.348 ; gain = 0.000 ; free physical = 53813 ; free virtual = 75159
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2756.348 ; gain = 0.000 ; free physical = 54702 ; free virtual = 76048
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2756.348 ; gain = 0.000 ; free physical = 54702 ; free virtual = 76048
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2756.348 ; gain = 0.000 ; free physical = 54733 ; free virtual = 76079
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2764.352 ; gain = 0.000 ; free physical = 54654 ; free virtual = 76000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2764.352 ; gain = 0.000 ; free physical = 54654 ; free virtual = 76000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54710 ; free virtual = 76056
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54710 ; free virtual = 76056
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54712 ; free virtual = 76058
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0 was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:311]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0 was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:307]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0 was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:306]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0 was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:303]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0 was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:301]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0_rep was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:301]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0_rep was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:301]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0_rep was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:301]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0_rep was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:301]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata0_rep was removed.  [/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/ethernet/ethernet.v:301]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54713 ; free virtual = 76060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 3     
+	   3 Input   14 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 13    
+	   3 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               14 Bit    Registers := 3     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 34    
++---RAMs : 
+	              512 Bit	(16 X 32 bit)          RAMs := 4     
+	              224 Bit	(16 X 14 bit)          RAMs := 3     
+	               32 Bit	(16 X 2 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 15    
+	  13 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 8     
+	   7 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 73    
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 4     
+	  10 Input    1 Bit        Muxes := 5     
+	   9 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axi_awaddr[15] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[14] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[13] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[12] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[15] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[14] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[13] in module ethernet is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[12] in module ethernet is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54680 ; free virtual = 76032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------+-----------------------+-----------+----------------------+----------------+
+|Module Name      | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++-----------------+-----------------------+-----------+----------------------+----------------+
+|riscv_Ethernet_0 | inst/tx_addr_reg      | Implied   | 16 x 32              | RAM32M x 12    | 
+|riscv_Ethernet_0 | inst/tx_size_reg      | Implied   | 16 x 14              | RAM32M x 6     | 
+|riscv_Ethernet_0 | inst/rx_addr_reg      | Implied   | 16 x 32              | RAM32M x 12    | 
+|riscv_Ethernet_0 | inst/rx_size_reg      | Implied   | 16 x 14              | RAM32M x 6     | 
+|riscv_Ethernet_0 | inst/rx_status_reg    | Implied   | 16 x 2               | RAM16X1D x 2   | 
+|riscv_Ethernet_0 | inst/rx_done_reg      | Implied   | 16 x 14              | RAM32M x 3     | 
+|riscv_Ethernet_0 | inst/rx_burst_buf_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|riscv_Ethernet_0 | inst/tx_burst_buf_reg | Implied   | 16 x 32              | RAM32M x 6     | 
++-----------------+-----------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54579 ; free virtual = 75932
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54579 ; free virtual = 75931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------+-----------------------+-----------+----------------------+----------------+
+|Module Name      | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++-----------------+-----------------------+-----------+----------------------+----------------+
+|riscv_Ethernet_0 | inst/tx_addr_reg      | Implied   | 16 x 32              | RAM32M x 12    | 
+|riscv_Ethernet_0 | inst/tx_size_reg      | Implied   | 16 x 14              | RAM32M x 6     | 
+|riscv_Ethernet_0 | inst/rx_addr_reg      | Implied   | 16 x 32              | RAM32M x 12    | 
+|riscv_Ethernet_0 | inst/rx_size_reg      | Implied   | 16 x 14              | RAM32M x 6     | 
+|riscv_Ethernet_0 | inst/rx_status_reg    | Implied   | 16 x 2               | RAM16X1D x 2   | 
+|riscv_Ethernet_0 | inst/rx_done_reg      | Implied   | 16 x 14              | RAM32M x 3     | 
+|riscv_Ethernet_0 | inst/rx_burst_buf_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|riscv_Ethernet_0 | inst/tx_burst_buf_reg | Implied   | 16 x 32              | RAM32M x 6     | 
++-----------------+-----------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54561 ; free virtual = 75913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54560 ; free virtual = 75913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54560 ; free virtual = 75913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54560 ; free virtual = 75913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54560 ; free virtual = 75913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54560 ; free virtual = 75913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54560 ; free virtual = 75913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    60|
+|2     |LUT1     |    24|
+|3     |LUT2     |   131|
+|4     |LUT3     |   113|
+|5     |LUT4     |    80|
+|6     |LUT5     |   149|
+|7     |LUT6     |   277|
+|8     |MUXF7    |     2|
+|9     |RAM16X1D |    34|
+|10    |RAM32M   |    35|
+|11    |RAM32X1D |    20|
+|12    |FDRE     |   508|
+|13    |FDSE     |     2|
+|14    |IOBUF    |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2764.352 ; gain = 8.004 ; free physical = 54560 ; free virtual = 75913
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2764.352 ; gain = 0.000 ; free physical = 54615 ; free virtual = 75968
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2764.359 ; gain = 8.004 ; free physical = 54615 ; free virtual = 75968
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2764.359 ; gain = 0.000 ; free physical = 54706 ; free virtual = 76058
+INFO: [Netlist 29-17] Analyzing 152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'riscv_Ethernet_0' is not ideal for floorplanning, since the cellview 'ethernet' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2764.359 ; gain = 0.000 ; free physical = 54644 ; free virtual = 75996
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 90 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 34 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 35 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 20 instances
+
+Synth Design complete, checksum: a117ef93
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 2764.359 ; gain = 16.016 ; free physical = 54829 ; free virtual = 76182
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/workspace/rocket64b1/vivado-genesys2-riscv/genesys2-riscv.runs/riscv_Ethernet_0_synth_1/riscv_Ethernet_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP riscv_Ethernet_0, cache-ID = 0da5f074ddcb00f6
+INFO: [Common 17-1381] The checkpoint '/home/lee/rebuild_oled_switch_cmd/vivado-risc-v/workspace/rocket64b1/vivado-genesys2-riscv/genesys2-riscv.runs/riscv_Ethernet_0_synth_1/riscv_Ethernet_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_Ethernet_0_utilization_synth.rpt -pb riscv_Ethernet_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar  4 19:17:04 2023...

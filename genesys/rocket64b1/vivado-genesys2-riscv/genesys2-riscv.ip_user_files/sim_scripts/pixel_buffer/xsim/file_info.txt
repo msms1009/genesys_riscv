@@ -1,0 +1,2 @@
+pixel_buffer.v,verilog,xil_defaultlib,../../../../../../../../../Downloads/Nexys-Video-GPIO/src/ip/pixel_buffer/sim/pixel_buffer.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
